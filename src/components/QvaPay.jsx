@@ -49,10 +49,10 @@ const QvaPay = (props) => {
                 1 SQP
               </th>
               <td className="py-4 px-6">
-                {data.median_buy} {props.coin}
+                {Number(data.median_buy.toFixed(2))} {props.coin}
               </td>
               <td className="py-4 px-6">
-                {data.median_sell} {props.coin}
+                {Number(data.median_sell.toFixed(2))} {props.coin}
               </td>
             </tr>
           </tbody>
