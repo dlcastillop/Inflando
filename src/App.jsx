@@ -1,6 +1,7 @@
 import React from "react";
 import Toque from "./components/Toque";
 import QvaPay from "./components/QvaPay";
+import CambioCuba from "./components/CambioCuba";
 import "./App.css";
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
       </h2>
       <div className="grid grid-cols-1 gap-5 justify-center">
         <Toque />
+        <CambioCuba />
       </div>
       <h2 className="p-5 text-xl font-semibold text-center text-gray-900 bg-white">
         Datos recopilados de la red P2P de{" "}
