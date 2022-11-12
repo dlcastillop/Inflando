@@ -11,7 +11,7 @@ const App = () => {
         Tasa de cambio informal de divisas en Cuba
       </h1>
 
-      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 justify-center">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-5 justify-center">
         <Toque />
         <CambioCuba />
       </div>

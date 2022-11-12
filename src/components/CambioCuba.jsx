@@ -28,7 +28,7 @@ const CambioCuba = () => {
         <Error />
       ) : (
         <>
-          <h2 className="p-5 text-xl font-semibold text-gray-900 bg-white">
+          <h2 className="p-5 text-xl text-center font-semibold text-gray-900 bg-white">
             Datos recopilados por{" "}
             <a
               href="https://api.cambiocuba.money/api/v2/x-rates"
@@ -38,7 +38,7 @@ const CambioCuba = () => {
               CambioCuba
             </a>
           </h2>
-          <table className="text-lg text-left text-gray-500 shadow-md">
+          <table className="text-lg text-left text-gray-500 shadow-md m-auto">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
                 <th scope="col" className="py-3 px-6">
