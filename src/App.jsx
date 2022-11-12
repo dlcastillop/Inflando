@@ -11,17 +11,7 @@ const App = () => {
         Tasa de cambio informal de divisas en Cuba
       </h1>
 
-      <h2 className="p-5 text-xl font-semibold text-center text-gray-900 bg-white">
-        Datos recopilados por{" "}
-        <a
-          href="https://eltoque.com/tasas-de-cambio-de-moneda-en-cuba-hoy"
-          className="font-medium text-blue-600 hover:underline"
-          target="_blank"
-        >
-          elTOQUE
-        </a>
-      </h2>
-      <div className="grid grid-cols-1 gap-5 justify-center">
+      <div className="grid grid-cols-1 gap-5 md:grid-cols-2 justify-center">
         <Toque />
         <CambioCuba />
       </div>
