@@ -28,7 +28,7 @@ const Toque = () => {
         <Error />
       ) : (
         <>
-          <h3 className="p-5 text-xl text-center font-semibold text-gray-900 bg-white">
+          <h3 className="text-xl text-center font-semibold text-gray-900 bg-white">
             elTOQUE
           </h3>
           <table className="text-lg text-left text-gray-500 shadow-md m-auto">
