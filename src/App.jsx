@@ -1,7 +1,9 @@
 import React from "react";
 import Toque from "./components/Toque";
 import QvaPay from "./components/QvaPay";
-import CambioCuba from "./components/CambioCuba";
+import CambioCubaDivisas from "./components/CambioCubaDivisas";
+import CambioCubaCrypto from "./components/CambioCubaCrypto";
+import Footer from "./components/Footer";
 import "./App.css";
 
 const App = () => {
@@ -11,36 +13,30 @@ const App = () => {
         Tasa de cambio informal de divisas en Cuba
       </h1>
 
+      <h2 className="my-4 text-xl font-bold tracking-tight leading-none text-black md:text-2xl lg:text-3xl text-center">
+        Divisas
+      </h2>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 justify-center">
         <Toque />
-        <CambioCuba />
+        <CambioCubaDivisas />
       </div>
-      <h2 className="p-5 text-xl font-semibold text-center text-gray-900 bg-white">
-        Datos recopilados de la red P2P de{" "}
-        <a
-          href="https://qvapay.com/p2p"
-          className="font-medium text-blue-600 hover:underline"
-          target="_blank"
-        >
-          QvaPay
-        </a>
+
+      <h2 className="my-4 text-xl font-bold tracking-tight leading-none text-black md:text-2xl lg:text-3xl text-center">
+        Criptomonedas
+      </h2>
+      <div className="grid grid-cols-1 gap-5 justify-center">
+        <CambioCubaCrypto />
+      </div>
+
+      <h2 className="my-4 text-xl font-bold tracking-tight leading-none text-black md:text-2xl lg:text-3xl text-center">
+        Saldo QvaPay
       </h2>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-5 justify-center">
         <QvaPay coin="CUP" />
         <QvaPay coin="MLC" />
       </div>
 
-      <footer className="text-md text-center text-gray-900 mt-10">
-        De{" "}
-        <a
-          href="https://danielcastillop.netlify.app/"
-          className="font-medium text-blue-600 hover:underline"
-          target="_blank"
-        >
-          Daniel Castillo
-        </a>{" "}
-        con ❤ para Cuba
-      </footer>
+      <Footer />
     </>
   );
 };

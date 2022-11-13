@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Loader from "./Loader";
 import Error from "./Error";
 
-const CambioCuba = () => {
+const CambioCubaCrypto = () => {
   let [data, setData] = useState();
   let [showLoader, setShowLoader] = useState(true);
   let [showError, setShowError] = useState(false);
@@ -28,16 +28,9 @@ const CambioCuba = () => {
         <Error />
       ) : (
         <>
-          <h2 className="p-5 text-xl text-center font-semibold text-gray-900 bg-white">
-            Datos recopilados por{" "}
-            <a
-              href="https://api.cambiocuba.money/api/v2/x-rates"
-              className="font-medium text-blue-600 hover:underline"
-              target="_blank"
-            >
-              CambioCuba
-            </a>
-          </h2>
+          <h3 className="p-5 text-xl text-center font-semibold text-gray-900 bg-white">
+            CambioCuba
+          </h3>
           <table className="text-lg text-left text-gray-500 shadow-md m-auto">
             <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr>
@@ -52,21 +45,11 @@ const CambioCuba = () => {
             <tbody>
               <tr className="bg-white border-b">
                 <th className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
-                  1 EUR
+                  1 USDT (TRC20)
                 </th>
-                <td className="py-4 px-6">{data.statistics.ECU.avg} CUP</td>
-              </tr>
-              <tr className="bg-white border-b">
-                <th className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
-                  1 USD
-                </th>
-                <td className="py-4 px-6">{data.statistics.USD.avg} CUP</td>
-              </tr>
-              <tr className="bg-white border-b">
-                <th className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
-                  1 MLC
-                </th>
-                <td className="py-4 px-6">{data.statistics.MLC.avg} CUP</td>
+                <td className="py-4 px-6">
+                  {data.statistics.USDT_TRC20.avg} CUP
+                </td>
               </tr>
             </tbody>
           </table>
@@ -76,4 +59,4 @@ const CambioCuba = () => {
   );
 };
 
-export default CambioCuba;
+export default CambioCubaCrypto;
