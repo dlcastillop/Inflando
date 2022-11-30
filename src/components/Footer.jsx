@@ -8,7 +8,7 @@ const Footer = () => {
         <span className="block text-sm text-gray-500">
           De{" "}
           <a
-            href="https://danielcastillop.netlify.app/"
+            href="https://dlcastillop.vercel.app/"
             className="hover:underline text-blue-600"
             target="_blank"
           >
