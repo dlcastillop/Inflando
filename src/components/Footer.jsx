@@ -8,7 +8,7 @@ const Footer = () => {
         <span className="block text-sm text-gray-500">
           De{" "}
           <a
-            href="https://dlcastillop.vercel.app/"
+            href="https://dlcastillop.com/"
             className="hover:underline text-blue-600"
             target="_blank"
           >
